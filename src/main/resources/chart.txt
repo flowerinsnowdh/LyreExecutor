@@ -1,0 +1,233 @@
+# 每分钟90排
+!BPM 90
+# 四分音符为一拍 每小节有4拍
+!BEATS 4/4
+# 每行是四分音符
+!NOTE 1.0
+
+# 1
+E
+T
+
+# 2
+W ANV
+W
+Q
+# 切换到八分音符
+!NOTE 0.5
+J
+T
+
+# 3
+# 切换到四分音符
+!NOTE 1.0
+W SMB
+W
+Q
+!NOTE 0.5
+J
+E
+
+# 4
+!NOTE 1.0
+Q DAN
+Q
+J
+H
+
+# 5
+!NOTE 0.5
+D MBC
+D
+Q
+Q
+J
+J
+G
+T
+
+# 6
+!NOTE 1.0
+W Z
+W ANV
+Q
+!NOTE 0.5
+J
+T
+
+# 7
+!NOTE 1.0
+W XZ
+W SMB
+Q
+!NOTE 0.5
+J
+E
+
+# 8
+!NOTE 1.0
+Q CZ
+Q DAN
+J
+H
+
+# 9
+!NOTE 0.5
+Z
+C
+A
+A
+D M
+M
+G N
+D
+
+# 10-1
+Z
+S Z # 附点
+# 10-2
+V
+Z
+# 10-3
+D V
+Z
+# 10-4
+G V
+D Z
+
+# 11-1
+Z
+S X
+# 11-2
+B
+X
+# 11-3
+D B
+X
+# 11-4
+G B
+S X
+
+# 12
+Z
+A C
+N
+C
+N
+C
+N
+C
+
+# 13 C↑
+Z
+C
+N
+C
+D N
+C
+G N
+D C
+
+# 14
+Z
+S V
+Z
+V
+D Z
+V
+G Z
+D V
+
+# 15
+Z
+S X
+B
+X
+D B
+X
+G B
+S X
+
+# 16
+Z
+D C
+N
+C
+N
+C
+N
+C
+
+# 17 C↑↑
+Z
+C
+N
+C
+D N
+C
+G N
+C
+
+# 18
+H Z
+G V
+H V
+E Z
+V
+Z
+V
+H Z
+
+# 19
+Z
+G X
+H B
+W X
+B
+X
+Q B
+X
+
+# 20
+J Z
+C
+G N
+C
+D N
+C
+S N
+C
+
+# 21
+!NOTE 1.0
+A
+M
+N
+B
+
+# 22
+!NOTE 0.5
+N
+B
+N
+D
+0
+0
+0
+N
+
+# 23
+0
+B
+N
+S
+0
+0
+Q
+0
+
+# 24
+MC
+0
+0
+NC
