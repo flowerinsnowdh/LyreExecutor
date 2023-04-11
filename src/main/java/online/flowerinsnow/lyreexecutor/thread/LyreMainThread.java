@@ -6,6 +6,7 @@ import java.util.List;
 public class LyreMainThread implements Runnable {
     private final List<String> lines;
     private boolean pause;
+    private int lineNumber;
 
     public LyreMainThread(List<String> lines) {
         this.lines = lines;
@@ -16,7 +17,7 @@ public class LyreMainThread implements Runnable {
         int bpm = -1;
         double note = -1.0;
         long waitPerLine = -1L;
-        int lineNumber = 0;
+        lineNumber = 0;
 
         Robot robot;
         try {
@@ -95,16 +96,23 @@ public class LyreMainThread implements Runnable {
 
     public void pause() {
         pause = true;
+        System.out.println("Paused at line " + lineNumber);
     }
 
     public void resume() {
         pause = false;
+        System.out.println("Resumed at line " + lineNumber);
     }
 
     @SuppressWarnings("UnusedReturnValue")
     public boolean sPause() {
-        pause = !pause;
-        return pause;
+        if (isPause()) {
+            resume();
+            return false;
+        } else {
+            pause();
+            return true;
+        }
     }
 
     private void fatalError(String reason, int lineNumber) {

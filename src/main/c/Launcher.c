@@ -8,12 +8,12 @@ int main(int argc, char** argv) {
         for (int i = 0; i < size; i++) {
             cmd[i] = '\0';
         }
-        strcat(cmd, "java -jar lib\\LyreExecutor-1.0.2.jar \"");
+        strcat(cmd, "java -jar lib\\LyreExecutor-1.0.3.jar \"");
         strcat(cmd, argv[1]);
         strcat(cmd, "\"");
         return system(cmd);
     } else {
-        return system("java -jar lib\\LyreExecutor-1.0.2.jar");
+        return system("java -jar lib\\LyreExecutor-1.0.3.jar");
     }
     return 0;
 }
