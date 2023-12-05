@@ -1,5 +1,6 @@
 package online.flowerinsnow.lyreexecutor.jni;
 
+// windows.h
 public class CWindows {
     /**
      * 获取按键是否已按下

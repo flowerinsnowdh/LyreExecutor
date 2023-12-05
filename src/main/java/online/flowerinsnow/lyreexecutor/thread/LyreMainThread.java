@@ -40,7 +40,7 @@ public class LyreMainThread implements Runnable {
                     return;
                 }
             }
-            if (line.trim().length() == 0 || line.trim().charAt(0) == '#') { // 空行或注释 跳过
+            if (line.trim().isEmpty() || line.trim().charAt(0) == '#') { // 空行或注释 跳过
                 continue;
             }
             if (line.trim().charAt(0) == '!') { // 命令行
@@ -56,7 +56,7 @@ public class LyreMainThread implements Runnable {
                     }
                 } else if (line.trim().startsWith("!NOTE ")) { // 设置音符
                     if (bpm == -1) { // 必须先设置BPM
-                        fatalError("Your must set BPM first!", lineNumber);
+                        fatalError("Your must specify BPM first!", lineNumber);
                         return;
                     }
                     try {
@@ -70,7 +70,7 @@ public class LyreMainThread implements Runnable {
                 }
             } else { // 音符行
                 if (waitPerLine == -1L) {
-                    fatalError("You must set BPM and note first!", lineNumber);
+                    fatalError("You must specify BPM and note first!", lineNumber);
                     return;
                 }
                 for (char c : line.toCharArray()) {
